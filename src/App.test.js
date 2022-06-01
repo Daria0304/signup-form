@@ -35,7 +35,6 @@ const clickOnSubmitButton = () => {
 describe('App', () => {
   test('inputs should be initially empty', () => {
     render(<App />)
-  
     expect(screen.getByRole('textbox').value).toBe('');
     expect(screen.getByLabelText('Password').value).toBe('');
     expect(screen.getByLabelText(/confirm password/i).value).toBe('');
